@@ -3,96 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirill Bukin Personal Site</title>
+    <title>Bukin Kirill Personal Site | Golang developer</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="header-top">
-            <span class="logo">Bukin Kirill</span>
+    <div class="header-top">
+        <a href="#home" class="link logo block-center">Bukin&nbsp;Kirill</a>
 
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">Home</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">About</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">Achievements</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">Skills</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">Work</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">Tech books</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-element__link" href="">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="navigation">
+            <ul class="menu block-center">
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link active home block-center" href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#about-me">About</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#achievements">Achievements</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#skills">Skills</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#job">Job</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#interests">Interests</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#contact-me">Contact&nbsp;me</a>
+                </li>
+            </ul>
+        </nav>
 
+        <div class="switcher-container block-center">
             <div class="switcher">Light/Dark</div>
         </div>
+    </div>
 
+    <header class="header" id="home">
         <div class="header-center">
-            <h1 class="name">Bukin&nbsp;Kirill</h1>
-            <p class="description">Hello! My name is Kirill. I am backend developer, let's get acquainted!</p>
+            <div class="header-center__wrapper">
+                <h1 class="name">Bukin&nbsp;Kirill</h1>
+                <p class="description">Hello! My name is Kirill. I am backend developer, let's get acquainted!</p>
+            </div>
         </div>
     </header>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="left">
-            <img src="" alt="Photo" />
+            <img src="images/cpC0oc_CbBE-_7_.webp" alt="My photo" class="about-me__image" />
         </div>
 
         <div class="right">
             <h2 class="about-me__title">Bukin Kirill Evgenievich</h2>
             <p class="about-me__description gray">Backend developer</p>
 
-            <p class="about-me__description">I am a junior backend developer with 1 year of experience. I started my career with an internship as a C# developer at STM Labs, managed to work in a startup with a project for Huawei, tried many programming languages ​​and technologies.</p>
-            <p class="about-me__description">Now I work at S-Terra CSP, namely, I develop the NGFW management system. Here I fell in love with golang, got acquainted with the VRRP protocol, learned to work in a team.</p>
+            <p class="about-me__description">I am a junior backend developer with 1 year of experience. I started my career with an internship as a C# developer at <a href="https://stm-labs.ru/en/" target="_blank" class="link">STM Labs</a>, managed to work in a startup with a project for Huawei, tried many programming languages ​​and technologies.</p>
+            <p class="about-me__description">Now I work at <a href="https://www.s-terra.ru/" target="_blank" class="link">S-Terra CSP</a>, namely, I develop the NGFW management system. Here I fell in love with golang, got acquainted with the VRRP protocol, learned to work in a team.</p>
             <p class="about-me__description">I devote my free time to studying algorithms and data structures, as well as participating in hackathons and various IT-related events.</p>
             <p class="about-me__description">I actively run a <a class="link" target="_blank" href="https://www.youtube.com/@fre3dom3322">YouTube channel</a> where I talk about interesting algorithmic problems, as well as about various useful IT tools in backend development.</p>
         
             <ul class="about-me__extra">
                 <li class="about-me__extra-element">
-                    <span class="bold">Birthday:</span>
-                    <span>03.23.2002</span>
+                    <span class="about-me__extra-icon birthday">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="m15 1.784-.796.795a1.125 1.125 0 1 0 1.591 0L15 1.784ZM12 1.784l-.796.795a1.125 1.125 0 1 0 1.591 0L12 1.784ZM9 1.784l-.796.795a1.125 1.125 0 1 0 1.591 0L9 1.784ZM9.75 7.547c.498-.021.998-.035 1.5-.042V6.75a.75.75 0 0 1 1.5 0v.755c.502.007 1.002.021 1.5.042V6.75a.75.75 0 0 1 1.5 0v.88l.307.022c1.55.117 2.693 1.427 2.693 2.946v1.018a62.182 62.182 0 0 0-13.5 0v-1.018c0-1.519 1.143-2.829 2.693-2.946l.307-.022v-.88a.75.75 0 0 1 1.5 0v.797ZM12 12.75c-2.472 0-4.9.184-7.274.54-1.454.217-2.476 1.482-2.476 2.916v.384a4.104 4.104 0 0 1 2.585.364 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 3.67 0 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 3.67 0 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 2.585-.364v-.384c0-1.434-1.022-2.7-2.476-2.917A49.138 49.138 0 0 0 12 12.75ZM21.75 18.131a2.604 2.604 0 0 0-1.915.165 4.104 4.104 0 0 1-3.67 0 2.605 2.605 0 0 0-2.33 0 4.104 4.104 0 0 1-3.67 0 2.605 2.605 0 0 0-2.33 0 4.104 4.104 0 0 1-3.67 0 2.604 2.604 0 0 0-1.915-.165v2.494c0 1.035.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875v-2.494Z" />
+                        </svg> 
+                    </span>
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Birthday:</span>
+                        <span class="about-me__extra-description">03.23.2002</span>
+                    </div>
                 </li>
                 <li class="about-me__extra-element">
-                    <span class="bold">Address:</span>
-                    <span>Nizhniy Novgorod, Russia</span>
+                    <span class="about-me__extra-icon address">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                        </svg>                          
+                    </span>
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Address:</span>
+                        <span class="about-me__extra-description">Nizhniy Novgorod, Russia</span>
+                    </div>
                 </li>
                 <li class="about-me__extra-element">
-                    <span class="bold">Education:</span>
-                    <span>High School of Economics, Software Development</span>
+                    <span class="about-me__extra-icon education">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+                            <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+                            <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
+                        </svg>
+                    </span>
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Education:</span>
+                        <span class="about-me__extra-description">High School of Economics, Software Development</span>
+                    </div>
                 </li>
                 <li class="about-me__extra-element">
-                    <span class="bold">Courses:</span>
-                    <span>Thank Go! Golang на практике (Stepik)</span>
+                    <span class="about-me__extra-icon courses">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                        </svg>
+                    </span>
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Courses:</span>
+                        <span class="about-me__extra-description block">Thank Go! Golang на практике (Stepik)</span>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="achievements">
+    <section class="achievements section-gray block-center" id="achievements">
         <h2 class="second-title">Achievements</h2>
 
-        <ul class="achievements-list">
-            <li class="achievements-list__element">Achievement 1</li>
-            <li class="achievements-list__element">Achievement 2</li>
-            <li class="achievements-list__element">Achievement 3</li>
-            <li class="achievements-list__element">Achievement 4</li>
-            <li class="achievements-list__element">Achievement 5</li>
-        </ul>
+        <div class="achievements-list slider">
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-1" />
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-2" />
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-3" />
+
+            <div class="achievements-list__view slider__wrapper">
+                <a href="" class="achievements-list__element slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/764333336.jpeg" alt="STM" />
+                </a>
+                <a href="" class="achievements-list__element slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/766166862.jpeg" alt="ALT Linux Conf" />
+                </a>
+                <a href="" class="achievements-list__element slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/Сертификат участника (1).jpg" alt="MTS Hack" />
+                </a>
+            </div>
+            <div class="achievements-list__view slider__wrapper">
+                <a href="" class="achievements-list__element slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/764333336.jpeg" alt="STM" />
+                </a>
+                <a href="" class="achievements-list__element slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/766166862.jpeg" alt="ALT Linux Conf" />
+                </a>
+                <a href="" class="achievements-list__element slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/Сертификат участника (1).jpg" alt="MTS Hack" />
+                </a>
+            </div>
+
+            <div class="slider__controls">
+                <label for="slider-achievements-1" class="slider__controls-element"></label>
+                <label for="slider-achievements-2" class="slider__controls-element"></label>
+                <label for="slider-achievements-3" class="slider__controls-element"></label>
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2 class="second-title">Skills</h2>
 
         <p class="section-description">I have described the most basic tools that I am familiar with or have worked with directly.</p>
@@ -130,7 +199,7 @@
         </div>
     </section>
 
-    <section class="job">
+    <section class="job" id="job">
         <h2 class="second-title">Job</h2>
 
         <div class="job-wrapper">
@@ -164,54 +233,29 @@
         </div>
     </section>
 
-    <section class="interests">
+    <section class="interests" id="interests">
         <h2 class="second-title">Interests</h2>
-        <div class="interest-wrapper">
-            <img src="" alt="" class="interest-image" />
-            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
-            <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
-        </div>
-        <div class="interest-wrapper">
-            <img src="" alt="" class="interest-image" />
-            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
-            <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
-        </div>
-        <div class="interest-wrapper">
-            <img src="" alt="" class="interest-image" />
-            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
-            <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
-        </div>
-        <div class="interest-wrapper">
-            <img src="" alt="" class="interest-image" />
-            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
-            <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
-        </div>
-        <div class="interest-wrapper">
-            <img src="" alt="" class="interest-image" />
-            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
-            <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
-        </div>
-        <div class="interest-wrapper">
-            <img src="" alt="" class="interest-image" />
-            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
-            <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
+
+        <div class="interests__list">
+            <div class="interest-wrapper">
+                <img src="images/Machine_Learning-.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">Lorem ipsum dolor sit amet.</p>
+                <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
+            </div>
+            <div class="interest-wrapper">
+                <img src="images/iStock-mathproblems.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">Lorem ipsum dolor sit amet.</p>
+                <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
+            </div>
+            <div class="interest-wrapper">
+                <img src="images/1_BtuHe_nyh2RqVnVsCHr4Hw.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">Lorem ipsum dolor sit amet.</p>
+                <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem modi cum ullam, cupiditate repellat obcaecati expedita inventore vero labore?</p>
+            </div>
         </div>
     </section>
 
-    <section class="books">
-        <h2 class="second-title">Learned books</h2>
-        <p class="section-description">Here are all the books I have read on programming.</p>
-
-        <ul class="books-list">
-            <li class="books-list__element">Book 1</li>
-            <li class="books-list__element">Book 2</li>
-            <li class="books-list__element">Book 3</li>
-            <li class="books-list__element">Book 4</li>
-            <li class="books-list__element">Book 5</li>
-        </ul>
-    </section>
-
-    <section class="contact-me">
+    <section class="contact-me" id="contact-me">
         <h2 class="second-title">Contact me</h2>
 
         <form action="" class="contact-me__form">
@@ -236,10 +280,10 @@
     <footer>
         <ul class="socials">
             <li class="social-element">
-                <a href="https://t.me/freedom3322" class="social-element__link">TG</a>
+                <a href="https://t.me/freedom3322" class="link social-element__link">TG</a>
             </li>
             <li class="social-element">
-                <a href="https://www.youtube.com/@fre3dom3322" class="social-element__link">YT</a>
+                <a href="https://www.youtube.com/@fre3dom3322" class="link social-element__link">YT</a>
             </li>
         </ul>
 
@@ -248,4 +292,5 @@
         </p>
     </footer>
 </body>
+
 </html>
