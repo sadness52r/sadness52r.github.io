@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Menu */
+    .logo {
+        font-size: 28px;
+    }
+
+    .menu-element {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .menu-element__link.home svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .switcher-container {
+        width: 200px;
+    }
+
+    /* About me */
+    .about-me__image {
+        width: 300px;
+    }
+
+    .about-me__title {
+        font-size: 32px;
+    }
+
+    .about-me__description, ul.about-me__extra {
+        font-size: 18px;
+    }
+
+    /* Contact-me */
+    .form-result__content {
+        font-size: 18px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .contact-me__form {
+        max-width: 95%;
+    }
+
+    /* Common styles */
+    .slider__image {
+        max-width: 200px;
+    }
+}
