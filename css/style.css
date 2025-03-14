@@ -1,5 +1,7 @@
 /* Variables  */
 :root {
+    --background-color: white;
+
     --color-blue: #6581ff;
     --color-text: #7a7a7a;
     --color-gray: #9e9e9e;
@@ -25,6 +27,14 @@
 
     --job-animation-hidden: calc(110vw / 2);
     --job-animation-end-margin: 5px;
+}
+
+.container {
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--color-text);
 }
 
 /* Header styles */
@@ -53,6 +63,10 @@
 }
 .header-top a.link {
     color: #fff;
+}
+
+#hamburger, .menu-hamburger {
+    display: none;
 }
 
 .logo {
@@ -201,7 +215,7 @@ ul.about-me__extra {
     border: 100px solid transparent;
 }
 .achievements::before {
-    border-top: 30px solid #fff;
+    border-top: 30px solid var(--background-color);
     top: 0;
 }
 .achievements::after {
@@ -656,6 +670,14 @@ a.link:hover {
 
 .cls {
     clear: both;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --color-text: white;
+    --background-gray: #5c5c5c;
+    --color-text-black: #cecdcd;
+    --color-light-gray: #494949;
 }
 
 /* .blur {
